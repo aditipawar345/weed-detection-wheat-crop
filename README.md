@@ -1,24 +1,34 @@
 # weed-detection-wheat-crop
-Image Processing-based Weed Detection using OpenCV
+Deep Learning-based Weed Detection using U-Net
 
-# 🌾 Weed Detection in Wheat Crops using AI
+# 🌾 Weed Detection in Wheat Crops using Deep Learning (U-Net)
 
 ## 📌 Overview
-This project focuses on detecting weeds in wheat crops using machine learning techniques. 
-It helps in precision agriculture by identifying unwanted plants, reducing manual effort, 
-and improving crop yield.
+This project focuses on detecting weeds in wheat crop images using a Deep Learning-based image segmentation approach. 
+A U-Net architecture is implemented using PyTorch to accurately identify and segment weed regions from crop images.
+
+This solution contributes to precision agriculture by enabling automated weed detection, reducing manual effort, and improving crop productivity.
+
+---
 
 ## 🚀 Features
-- Image-based weed detection
-- Machine learning model implementation
-- Data preprocessing and visualization
-- Jupyter Notebook-based workflow
+- Semantic segmentation using U-Net architecture
+- Image preprocessing and normalization
+- Custom dataset handling (images + masks)
+- Combined Dice + Binary Cross Entropy Loss
+- Visualization of predicted weed regions
+
+---
 
 ## 🛠️ Tech Stack
 - Python
+- PyTorch
+- OpenCV
+- NumPy
+- Matplotlib
 - Jupyter Notebook
-- Machine Learning (Scikit-learn / TensorFlow / OpenCV)
-- NumPy, Pandas, Matplotlib
+
+---
 
 ## 📂 Project Structure
 
@@ -28,24 +38,30 @@ and improving crop yield.
 
 ┣ 📄 README.md
 
+---
 
 ## ▶️ How to Run
 1. Clone the repository
-2. Open the notebook in Jupyter
-3. Run all cells step by step
+2. Install dependencies:
+   ```bash
+   pip install torch torchvision opencv-python matplotlib numpy
 
+   📊 Results
+Successfully segments weed regions from wheat crop images
+Demonstrates effectiveness of U-Net for agricultural image segmentation
+Provides clear visualization of predicted masks
 
-## 📊 Results
-- Successfully detects weed patterns in crop images
-- Improves accuracy of weed classification
+⚠️ Limitations
+Requires labeled mask dataset
+Performance depends on dataset quality and size
+Computationally intensive for large-scale deployment
 
+🎯 Future Scope
+Improve accuracy using advanced architectures (DeepLab, ResNet-based U-Net)
+Real-time detection using drones or edge devices
+Deployment as a web or mobile application
 
-## 🎯 Future Scope
-- Real-time detection using drones
-- Mobile app integration
-- Improved model accuracy with deep learning
-
-
+--------------------------------------------------------------------------------------------------------------------------------------
 ## 👩‍💻 Author
 Aditi Pawar
 
