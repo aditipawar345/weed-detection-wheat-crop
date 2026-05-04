@@ -21,23 +21,30 @@ and improving crop yield.
 - NumPy, Pandas, Matplotlib
 
 ## 📂 Project Structure
+
 📁 weed-detection-wheat-crop
+
 ┣ 📄 weed_detection.ipynb
+
 ┣ 📄 README.md
+
 
 ## ▶️ How to Run
 1. Clone the repository
 2. Open the notebook in Jupyter
 3. Run all cells step by step
 
+
 ## 📊 Results
 - Successfully detects weed patterns in crop images
 - Improves accuracy of weed classification
+
 
 ## 🎯 Future Scope
 - Real-time detection using drones
 - Mobile app integration
 - Improved model accuracy with deep learning
+
 
 ## 👩‍💻 Author
 Aditi Pawar
